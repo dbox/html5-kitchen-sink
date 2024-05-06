@@ -354,6 +354,12 @@ United States
           <button disabled>Cancel</button>
         </p>
       </form>
+      <p><code>output</code>:</p>
+      <form onsubmit="return false" oninput="o.value= a.valueAsNumber + b.valueAsNumber">
+        <input name=a type=number step=any> +
+        <input name=b type=number step=any> =
+        <output name=o for="a b"></output>
+      </form>
       <p><code>ul</code> and <code>ol</code>:</p>
       <ul>
         <li>Unordered List item one
@@ -395,12 +401,6 @@ United States
         <li>List item three</li>
         <li>List item four</li>
       </ol>
-      <p><code>output</code>:</p>
-      <form onsubmit="return false" oninput="o.value= a.valueAsNumber + b.valueAsNumber">
-        <input name=a type=number step=any> +
-        <input name=b type=number step=any> =
-        <output name=o for="a b"></output>
-      </form>
       <p><code>pre</code>:</p>
       <pre>
 pre {
