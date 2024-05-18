@@ -33,6 +33,7 @@
         </p>
       </footer>
     </section>
+
     <hr>
     <section id="sections">
       <header>
@@ -69,6 +70,7 @@
 Content spec.</a></p>
       </footer>
     </section>
+
     <hr>
     <section id="phrasing">
       <header>
@@ -110,6 +112,7 @@ overridden.</bdo></p>
         <p>See the <a target="_blank" href="https://www.w3.org/TR/html5/dom.html#phrasing-content">Phrasing Content spec.</a></p>
       </footer>
     </section>
+
     <hr>
     <section id="palpable">
       <header>
@@ -133,7 +136,7 @@ United States
         <p>I quickly explained that many big jobs involve few hazards</p>
       </blockquote>
       <blockquote>
-        <p>This is a mult-line blockquote with a cite reference. People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to
+        <p>This is a multi-line blockquote with a cite reference. People think focus means saying yes to the thing you’ve got to focus on. But that’s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to
           pick carefully. I’m actually as proud of the things we haven’t done as the things I have done. Innovation is saying no to 1,000 things.</p>
         <footer>Steve Jobs, <cite>Apple Worldwide Developers’ Conference, 1997</cite></footer>
       </blockquote>
@@ -169,9 +172,10 @@ United States
         <figcaption>Figure 1: A picture of Bill Murray from <a href="https://www.fillmurray.com/">fillmurray.com</a>
         </figcaption>
       </figure>
-      <br><br>
-      <h4 id="forms"><a href="#forms">#</a> Forms</h4>
+
+      <br>
       <hr>
+      <h4 id="forms"><a href="#forms">#</a> Forms</h4>
       <form>
         <p>
           <label for="example-input-email">Email address</label>
@@ -199,11 +203,11 @@ United States
         </p>
         <p>
           <label for="example-input-readonly">Read-only</label>
-          <input type="text" readonly value="Can't touch this!">
+          <input type="text" id="example-input-readonly" readonly value="Can't touch this!">
         </p>
         <p>
           <label for="example-input-disabled">Disabled</label>
-          <input type="text" disabled value="Not available">
+          <input type="text" id="example-input-disabled" disabled value="Not available">
         </p>
         <p>
           <label for="example-input-url">URL</label>
@@ -330,11 +334,11 @@ United States
           </div>
           <div>
             <input type="radio" name="option-radio" id="option-radio2" value="option2">
-            <label>Option two can be something else and selecting it will deselect option one</label>
+            <label for="option-radio2">Option two can be something else and selecting it will deselect option one</label>
           </div>
           <div>
             <input type="radio" name="option-radio" id="option-radio3" value="option3" disabled>
-            <label>Option three is disabled</label>
+            <label for="option-radio3">Option three is disabled</label>
           </div>
         </fieldset>
         <fieldset>
@@ -354,6 +358,18 @@ United States
           <button disabled>Cancel</button>
         </p>
       </form>
+
+      <br>
+      <hr>
+      <p><code>output</code>:</p>
+      <form onsubmit="return false" oninput="o.value= a.valueAsNumber + b.valueAsNumber">
+        <input name=a type=number step=any> +
+        <input name=b type=number step=any> =
+        <output name=o for="a b"></output>
+      </form>
+
+      <br>
+      <hr>
       <p><code>ul</code> and <code>ol</code>:</p>
       <ul>
         <li>Unordered List item one
@@ -395,12 +411,9 @@ United States
         <li>List item three</li>
         <li>List item four</li>
       </ol>
-      <p><code>output</code>:</p>
-      <form onsubmit="return false" oninput="o.value= a.valueAsNumber + b.valueAsNumber">
-        <input name=a type=number step=any> +
-        <input name=b type=number step=any> =
-        <output name=o for="a b"></output>
-      </form>
+
+      <br>
+      <hr>
       <p><code>pre</code>:</p>
       <pre>
 pre {
@@ -423,9 +436,11 @@ There is a small mailbox here.
 <samp>Opening the mailbox reveals:
 A leaflet.
 
-></samp></pre><br><br>
-      <h4 id="tables"><a href="#tables">#</a> Tables</h4>
+></samp></pre>
+
+      <br>
       <hr>
+      <h4 id="tables"><a href="#tables">#</a> Tables</h4>
       <table>
         <caption>Tables can have captions now.</caption>
         <tbody>
@@ -525,6 +540,7 @@ A leaflet.
 Content spec.</a></p>
       </footer>
     </section>
+
     <hr>
     <section id="embeds">
       <header>
@@ -595,10 +611,10 @@ https://www.fillmurray.com/120/150 1x">
         <p>See the <a target="_blank" href="https://www.w3.org/TR/html5/dom.html#embedded-content">Embedded Content spec.</a></p>
       </footer>
     </section>
-    <hr>
-
   </main>
+  <hr>
   <footer role="contentinfo">
+    <p>This section serves as the <code>footer</code>.</p>
     <p>Find this document on <a href="https://github.com/dbox/html5-kitchen-sink">GitHub</a>.</p>
   </footer>
 </body>
