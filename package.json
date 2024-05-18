@@ -1,6 +1,6 @@
 {
   "name": "html5-kitchen-sink",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Sample markup containing all HTML5 elements, useful for setting base styles or testing CSS resets and frameworks.",
   "main": "kitchen-sink.html",
   "scripts": {
