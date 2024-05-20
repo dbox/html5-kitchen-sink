@@ -1,4 +1,4 @@
-<a href="http://codepen.io/dbox/pen/gMbeYw?editors=1100"><img src="http://www.devsitelocation.com/misc/html5-kitchen-sink.svg" width="300" height="300"></a>
+<a href="http://codepen.io/dbox/pen/gMbeYw?editors=1100"><img src="https://github.com/dbox/html5-kitchen-sink/assets/296130/a73bf098-5a35-48ee-a6f2-bfab88626617" width="500" height="500"></a>
 
 # html5-kitchen-sink
 Sample markup containing most HTML5 elements. 
